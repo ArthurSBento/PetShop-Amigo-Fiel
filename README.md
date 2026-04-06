@@ -1,2 +1,2 @@
 # PetShop-Amigo-Fiel
-Primeira versão de um sistema web de petshop (projeto acadêmico)
+petshop web versao final unficando elementos de e-commerce com SaaS (projeto acadêmico)
