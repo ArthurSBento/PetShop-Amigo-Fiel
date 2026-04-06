@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petshop Amigo Fiel | Cadastro</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/main.js" defer></script>
+</head>
+<body data-base-path="../">
+  <!-- Cabecalho principal -->
+  <header>
+    <div class="header-bar">
+      <div>
+        <h1>Petshop Amigo Fiel</h1>
+        <nav>
+          <a href="../index.html">Home</a> |
+          <a href="produtos.html">Produtos</a> |
+          <a href="servicos.html">Serviços</a> |
+          <a href="contato.html">Contato</a> |
+          <a href="agendamento.html">Agendamento</a>
+        </nav>
+      </div>
+      <div class="acoes">
+        <a class="botao botao-secundario" href="#cadastro-form">Cadastrar agora</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteudo principal -->
+
+  <main>
+    <h2>Cadastro do cliente e do pet</h2>
+    <p data-mensagem role="status" aria-live="polite"></p>
+
+    <section class="form-bloco">
+      <form id="cadastro-form">
+        <!-- Dados do cliente -->
+        <fieldset>
+          <legend>Dados do Cliente</legend>
+
+          <div class="form-linha">
+            <div class="form-campo">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+            </div>
+
+            <div class="form-campo">
+              <label for="cpf">CPF</label>
+              <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" inputmode="numeric" minlength="11" maxlength="14" required />
+            </div>
+          </div>
+
+          <div class="form-linha">
+            <div class="form-campo">
+              <span class="label">Sexo</span>
+              <div class="opcoes">
+                <label class="opcao-card">
+                  <input type="radio" name="sexo" value="feminino" required />
+                  Feminino
+                </label>
+                <label class="opcao-card">
+                  <input type="radio" name="sexo" value="masculino" required />
+                  Masculino
+                </label>
+                <label class="opcao-card">
+                  <input type="radio" name="sexo" value="outro" required />
+                  Outro
+                </label>
+              </div>
+            </div>
+
+            <div class="form-campo">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(11) 90000-0000" required />
+            </div>
+          </div>
+
+          <div class="form-linha">
+            <div class="form-campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="nome@email.com" required />
+            </div>
+
+            <div class="form-campo">
+              <label for="nascimento">Data de nascimento</label>
+              <input type="date" id="nascimento" name="nascimento" required />
+            </div>
+          </div>
+
+          <div class="form-linha">
+            <div class="form-campo">
+              <label for="endereco">Endereco</label>
+              <input type="text" id="endereco" name="endereco" placeholder="Rua, numero, bairro" required />
+            </div>
+
+            <div class="form-campo">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade" placeholder="Cidade" required />
+            </div>
+          </div>
+
+          <div class="form-linha">
+            <div class="form-campo">
+              <label for="estado">Estado</label>
+              <select id="estado" name="estado" required>
+                <option value="">Selecione</option>
+                <option value="sp">SP</option>
+                <option value="rj">RJ</option>
+                <option value="mg">MG</option>
+                <option value="es">ES</option>
+              </select>
+            </div>
+
+            <div class="form-campo">
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" name="cep" placeholder="00000-000" inputmode="numeric" maxlength="9" required />
+            </div>
+          </div>
+
+          <div class="form-linha">
+            <div class="form-campo">
+              <label for="contato">Contato preferido</label>
+              <select id="contato" name="contato" required>
+                <option value="">Selecione</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="telefone">Telefone</option>
+                <option value="email">E-mail</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Dados do pet -->
+        <fieldset>
+          <legend>Dados do Pet</legend>
+
+          <div class="form-linha">
+            <div class="form-campo">
+              <label for="nome-pet">Nome do pet</label>
+              <input type="text" id="nome-pet" name="nome-pet" placeholder="Nome do seu pet" required />
+            </div>
+
+            <div class="form-campo">
+              <label for="especie">Especie</label>
+              <select id="especie" name="especie" required>
+                <option value="">Selecione</option>
+                <option value="cao">Cao</option>
+                <option value="gato">Gato</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-linha">
+            <div class="form-campo">
+              <label for="raca">Raca</label>
+              <input type="text" id="raca" name="raca" placeholder="Raca do pet" required />
+            </div>
+
+            <div class="form-campo">
+              <label for="idade">Idade</label>
+              <input type="number" id="idade" name="idade" min="0" max="30" placeholder="Idade em anos" required />
+            </div>
+          </div>
+
+          <div class="form-linha">
+            <div class="form-campo">
+              <label for="peso">Peso</label>
+              <input type="number" id="peso" name="peso" min="0" max="80" step="0.1" placeholder="Peso em kg" required />
+            </div>
+
+            <div class="form-campo">
+              <label for="porte">Porte</label>
+              <select id="porte" name="porte">
+                <option value="">Selecione</option>
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-linha">
+            <div class="form-campo">
+              <span class="label">Sexo do pet</span>
+              <div class="opcoes">
+                <label class="opcao-card">
+                  <input type="radio" name="sexo-pet" value="macho" required />
+                  Macho
+                </label>
+                <label class="opcao-card">
+                  <input type="radio" name="sexo-pet" value="femea" required />
+                  Femea
+                </label>
+              </div>
+            </div>
+
+            <div class="form-campo">
+              <label for="observacoes">Observacoes</label>
+              <textarea id="observacoes" name="observacoes" rows="3" placeholder="Alergias, cuidados especiais, etc."></textarea>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Preferências -->
+        <fieldset>
+          <legend>Preferências</legend>
+
+          <div class="form-linha">
+            <div class="form-campo">
+              <label>
+                <input type="checkbox" name="novidades" />
+                Quero receber novidades por e-mail.
+              </label>
+            </div>
+
+            <div class="form-campo">
+              <label>
+                <input type="checkbox" name="termos" required />
+                Li e aceito os termos do serviço.
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="acoes">
+          <button class="botao botao-destaque" type="submit">Finalizar cadastro</button>
+          <button class="botao botao-secundario" type="reset">Limpar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodape do site -->
+
+  <footer>
+    <p><strong>Autor:</strong> Arthur Souza Dias Bento</p>
+    <p><strong>Contato:</strong> (11) 99999-0000 | contato@petshopamigofiel.com</p>
+    <p><strong>Endereço:</strong> Rua dos Pets, 123 - Centro, São Paulo - SP</p>
+    <nav>
+      <a href="../index.html">Home</a> |
+      <a href="produtos.html">Produtos</a> |
+      <a href="servicos.html">Serviços</a> |
+      <a href="contato.html">Contato</a> |
+      <a href="agendamento.html">Agendamento</a>
+    </nav>
+  </footer>
+  <div class="carrinho-fixo">
+    <a href="carrinho.html">Carrinho<span class="carrinho-contador" data-carrinho-contador>0</span></a>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+

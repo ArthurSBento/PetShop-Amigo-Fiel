@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petshop Amigo Fiel | Agendamento</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/main.js" defer></script>
+  <script src="../js/agendamentos.js" defer></script>
+</head>
+<body data-base-path="../">
+  <!-- Cabecalho principal -->
+  <header>
+    <div class="header-bar">
+      <div>
+        <h1>Petshop Amigo Fiel</h1>
+        <nav>
+          <a href="../index.html">Home</a> |
+          <a href="produtos.html">Produtos</a> |
+          <a href="servicos.html">Serviços</a> |
+          <a href="contato.html">Contato</a> |
+          <a href="agendamento.html">Agendamento</a>
+        </nav>
+      </div>
+      <div class="acoes">
+        <a class="botao botao-secundario" href="cadastro.html">Cadastro</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteudo principal -->
+
+  <main>
+    <h2>Agende um serviço</h2>
+    <p data-mensagem role="status" aria-live="polite"></p>
+    <p class="status-total" data-agendamento-mensagem role="status" aria-live="polite"></p>
+
+    <section class="form-bloco">
+      <form data-agendamento-form>
+        <fieldset>
+          <legend>Escolha o serviço</legend>
+          <div class="opcoes">
+            <label class="opcao-card">
+              <input type="radio" name="servico" value="banho" required />
+              Banho
+            </label>
+            <label class="opcao-card">
+              <input type="radio" name="servico" value="tosa" required />
+              Tosa
+            </label>
+            <label class="opcao-card">
+              <input type="radio" name="servico" value="banho-tosa" required />
+              Banho e Tosa
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tipo de atendimento</legend>
+          <div class="opcoes">
+            <label class="opcao-card">
+              <input type="radio" name="metodo" value="tele-busca" required />
+              Tele-busca (busca e devolução)
+            </label>
+            <label class="opcao-card">
+              <input type="radio" name="metodo" value="entrega" required />
+              Levar até a loja
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Data e Horário</legend>
+          <div class="form-linha">
+            <div class="form-campo">
+              <label for="data">Data</label>
+              <input type="date" id="data" name="data" required />
+            </div>
+
+            <div class="form-campo">
+              <label for="hora">Horário</label>
+              <input type="time" id="hora" name="hora" required />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Observações</legend>
+          <textarea name="observacoes" rows="4" placeholder="Conte algo importante sobre o seu pet."></textarea>
+        </fieldset>
+
+        <button class="botao botao-destaque" type="submit">Confirmar agendamento</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodape do site -->
+
+  <footer>
+    <p><strong>Autor:</strong> Arthur Souza Dias Bento</p>
+    <p><strong>Contato:</strong> (11) 99999-0000 | contato@petshopamigofiel.com</p>
+    <p><strong>Endereço:</strong> Rua dos Pets, 123 - Centro, São Paulo - SP</p>
+    <nav>
+      <a href="../index.html">Home</a> |
+      <a href="produtos.html">Produtos</a> |
+      <a href="servicos.html">Serviços</a> |
+      <a href="contato.html">Contato</a> |
+      <a href="agendamento.html">Agendamento</a>
+    </nav>
+  </footer>
+  <div class="carrinho-fixo">
+    <a href="carrinho.html">Carrinho<span class="carrinho-contador" data-carrinho-contador>0</span></a>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

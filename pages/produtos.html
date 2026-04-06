@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petshop Amigo Fiel | Produtos</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/main.js" defer></script>
+</head>
+<body data-base-path="../">
+  <!-- Cabecalho principal -->
+  <header>
+    <div class="header-bar">
+      <div>
+        <h1>Petshop Amigo Fiel</h1>
+        <nav>
+          <a href="../index.html">Home</a> |
+          <a href="produtos.html">Produtos</a> |
+          <a href="servicos.html">Serviços</a> |
+          <a href="contato.html">Contato</a> |
+          <a href="agendamento.html">Agendamento</a>
+        </nav>
+      </div>
+      <div class="acoes">
+        <a class="botao botao-secundario" href="cadastro.html">Cadastro</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteudo principal -->
+
+  <main>
+    <h2>Produtos selecionados para seu pet</h2>
+    <p class="destaque">Qualidade, conforto e bem-estar em cada categoria.</p>
+    <form class="barra-pesquisa busca-sugestoes" data-search-form>
+      <input type="search" placeholder="Buscar produtos e serviços" aria-label="Buscar produtos e serviços" />
+      <button class="botao botao-secundario" type="submit">Pesquisar</button>
+      <div class="lista-sugestoes" data-sugestoes></div>
+    </form>
+
+    <section>
+      <h3>Acessórios</h3>
+      <div class="lista-produtos">
+        <article class="card" id="cama-pet" data-produto="Cama Pet Conforto Premium">
+          <img src="../assets/images/acessorios/cama-pet.png" alt="Cama Pet Conforto Premium" width="200" />
+          <h4>Cama Pet Conforto Premium</h4>
+          <p>Conforto extra com tecido resistente e fácil de limpar.</p>
+          <div class="acoes-produto">
+            <p class="preco">Preço: R$ 179,90</p>
+            <button class="botao botao-destaque" type="button" data-add-carrinho data-nome="Cama Pet Conforto Premium" data-preco="179.90">Adicionar ao carrinho</button>
+            <a class="botao botao-secundario" href="produto-cama-pet.html">Comprar</a>
+          </div>
+        </article>
+
+        <article class="card" id="brinquedo-mordedor" data-produto="Brinquedo Mordedor Resistente">
+          <img src="../assets/images/acessorios/brinquedo-mordedor.png" alt="Brinquedo Mordedor Resistente" width="200" />
+          <h4>Brinquedo Mordedor Resistente</h4>
+          <p>Material durável para brincar, morder e gastar energia.</p>
+          <div class="acoes-produto">
+            <p class="preco">Preço: R$ 49,90</p>
+            <button class="botao botao-destaque" type="button" data-add-carrinho data-nome="Brinquedo Mordedor Resistente" data-preco="49.90">Adicionar ao carrinho</button>
+            <a class="botao botao-secundario" href="produto-brinquedo-mordedor.html">Comprar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h3>Rações</h3>
+      <div class="lista-produtos">
+        <article class="card" id="racao-golden" data-produto="Ração Golden Fórmula Adulto 10kg">
+          <img src="../assets/images/racoes/racao-golden.png" alt="Ração Golden Fórmula Adulto 10kg" width="200" />
+          <h4>Ração Golden Fórmula Adulto 10kg</h4>
+          <p>Nutrição completa para cães adultos com vitaminas e minerais.</p>
+          <div class="acoes-produto">
+            <p class="preco">Preço: R$ 229,90</p>
+            <button class="botao botao-destaque" type="button" data-add-carrinho data-nome="Ração Golden Fórmula Adulto 10kg" data-preco="229.90">Adicionar ao carrinho</button>
+            <a class="botao botao-secundario" href="produto-racao-golden.html">Comprar</a>
+          </div>
+        </article>
+
+        <article class="card" id="racao-pedigree" data-produto="Ração Pedigree Filhotes 2,5kg">
+          <img src="../assets/images/racoes/racao-pedigree.png" alt="Ração Pedigree Filhotes 2,5kg" width="200" />
+          <h4>Ração Pedigree Filhotes 2,5kg</h4>
+          <p>Nutrição balanceada para crescimento saudável dos filhotes.</p>
+          <div class="acoes-produto">
+            <p class="preco">Preço: R$ 86,90</p>
+            <button class="botao botao-destaque" type="button" data-add-carrinho data-nome="Ração Pedigree Filhotes 2,5kg" data-preco="86.90">Adicionar ao carrinho</button>
+            <a class="botao botao-secundario" href="produto-racao-pedigree.html">Comprar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h3>Higiene e Limpeza</h3>
+      <div class="lista-produtos">
+        <article class="card" id="tapete-higienico" data-produto="Tapete Higiênico 30 unidades">
+          <img src="../assets/images/higiene/tapete-higienico.png" alt="Tapete Higiênico 30 unidades" width="200" />
+          <h4>Tapete Higiênico 30 unidades</h4>
+          <p>Alta absorção e controle de odores para manter o ambiente limpo.</p>
+          <div class="acoes-produto">
+            <p class="preco">Preço: R$ 84,90</p>
+            <button class="botao botao-destaque" type="button" data-add-carrinho data-nome="Tapete Higiênico 30 unidades" data-preco="84.90">Adicionar ao carrinho</button>
+            <a class="botao botao-secundario" href="produto-tapete-higienico.html">Comprar</a>
+          </div>
+        </article>
+
+        <article class="card" id="shampoo-neutro" data-produto="Shampoo Pet Neutro 500ml">
+          <img src="../assets/images/higiene/shampoo.png" alt="Shampoo Pet Neutro 500ml" width="200" />
+          <h4>Shampoo Pet Neutro 500ml</h4>
+          <p>Fórmula suave para uso frequente e peles sensíveis.</p>
+          <div class="acoes-produto">
+            <p class="preco">Preço: R$ 34,90</p>
+            <button class="botao botao-destaque" type="button" data-add-carrinho data-nome="Shampoo Pet Neutro 500ml" data-preco="34.90">Adicionar ao carrinho</button>
+            <a class="botao botao-secundario" href="produto-shampoo-neutro.html">Comprar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodape do site -->
+
+  <footer>
+    <p><strong>Autor:</strong> Arthur Souza Dias Bento</p>
+    <p><strong>Contato:</strong> (11) 99999-0000 | contato@petshopamigofiel.com</p>
+    <p><strong>Endereço:</strong> Rua dos Pets, 123 - Centro, São Paulo - SP</p>
+    <nav>
+      <a href="../index.html">Home</a> |
+      <a href="produtos.html">Produtos</a> |
+      <a href="servicos.html">Serviços</a> |
+      <a href="contato.html">Contato</a> |
+      <a href="agendamento.html">Agendamento</a>
+    </nav>
+  </footer>
+  <div class="carrinho-fixo">
+    <a href="carrinho.html">Carrinho<span class="carrinho-contador" data-carrinho-contador>0</span></a>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
